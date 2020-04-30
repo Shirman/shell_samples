@@ -6,7 +6,7 @@
 * [基础语法](syntax_samples)
 * [网络](net_utils)
 * [docker常用命令](docker_samples)
-* [服务器状态](top_samples)
+* [服务器状态](os_utils)
 
 ### 更多资料
 * [命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md)
