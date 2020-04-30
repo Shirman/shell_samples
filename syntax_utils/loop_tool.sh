@@ -4,9 +4,9 @@ until_ctrl() {
   until [ $(eval "$1") -eq "$2" ]; do
       echo "$count"
       let count++
-      if [ $count -gt "$4" ]; then
+      if [ $count -gt "$3" ]; then
           break
       fi
-      sleep "$3"
+      sleep "$4"
   done
 }
