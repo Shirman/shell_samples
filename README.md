@@ -4,7 +4,7 @@
 ### 二. 目录
 * [常用工具封装](common_tool)
 * [基础语法](syntax_samples)
-* [网络](net_samples)
+* [网络](net_utils)
 * [docker常用命令](docker_samples)
 * [服务器状态](top_samples)
 
