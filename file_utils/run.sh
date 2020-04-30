@@ -1,5 +1,4 @@
 #!/bin/bash
 source file_tool.sh
 
-setProp age 30 ../test_data/.env
-read a
+setProp age 40 ../test_data/.env
