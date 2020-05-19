@@ -15,3 +15,9 @@ replace() {
 setProp() {
   replace "$1=.*" "$1=$2" "$3"
 }
+
+# 获取属性值
+getProp() {
+  prop=$(sed -n "/$1/p" "$2" | sed "s/$1=//g")
+  echo "$prop"
+}
