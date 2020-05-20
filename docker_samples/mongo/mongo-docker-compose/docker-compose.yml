@@ -1,11 +1,11 @@
 version: '3'
 services:
-  middle-dict-mongo:
-    image: docker.nb.bluetron.cn/bluetron/mongo:4.2.6
-    container_name: middle-dict-mongo
+  my-mongodb:
+    image: mongo:4.2.6
+    container_name: my-mongodb
     restart: always
     networks:
-      - middle-dict-net
+      - my_net
     ports:
       - 27017:27017
     env_file: .env
@@ -13,8 +13,10 @@ services:
       - ./data:/data/db
       - ./script/:/docker-entrypoint-initdb.d/
     environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root123
       MONGO_INITDB_DATABASE: my_test
 
 networks:
-  middle-dict-net:
+  my_net:
     external: false
