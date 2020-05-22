@@ -18,7 +18,7 @@ command:
 #### 官网文档地址
 [用户管理](https://docs.mongodb.com/manual/reference/method/js-user-management)
 [角色管理](https://docs.mongodb.com/manual/reference/method/js-role-management)
-
+[内置角色](https://docs.mongodb.com/manual/reference/built-in-roles/index.html)
 #### 常用操作
 ```javascript
 //创建用户，分配角色
